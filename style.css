@@ -1,0 +1,267 @@
+:root{
+    --green:#26d266;
+    --black:#130f40;
+    --light-color:#666;
+    --pink:#F535AA;
+    --blue:#1F45FC;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid rgba(0,0,0,.1);
+    --outline-hover:.2rem solid var(--black);
+}
+
+/*main styles*/
+.green-text{
+    color: var(--green);
+}
+
+.blue-text{
+    color: var(--blue);
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #130f40;
+  
+}
+/*Heading and nav styles*/
+#heading{
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #e9ecef;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logoimage {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.green-text {
+    color: #28a745;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #343a40;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 2px solid #28a745;
+    border-radius: 5px;
+    display: block;
+}
+
+.nav-links a:hover {
+    background-color: #28a745;
+    color: white;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+}
+
+.search-bar img {
+    width: 20px;
+    height: auto;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.cart-user {
+    display: flex;
+    align-items: center;
+}
+
+.cart-icon, .user-icon {
+    width: 30px;
+    height: auto;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.cart-icon:hover, .user-icon:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .search-bar {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .cart-user {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .search-bar input {
+        flex-grow: 1;
+        margin-right: 10px;
+    }
+}
+
+
+.dairy-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.section-text {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/*Footer styles*/
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+}
+
+.footer-column p,
+.footer-column ul,
+.footer-column a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 8px 0;
+}
+
+.footer-column ul li a:hover {
+    color: #28a745;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-bottom-text {
+    margin-top: 20px;
+    color: #aaa;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin: 0 auto 20px;
+    }
+}
+
+#sitemap{
+    text-align: center;
+}

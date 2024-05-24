@@ -1,0 +1,88 @@
+
+/*Basic styles*/
+h1.categorypage {
+    font-size: 2rem;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 20px 0;
+
+}
+
+.green-text {
+    color: #28a745;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+
+
+
+.card-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s;
+}
+
+.card-item:hover {
+    transform: scale(1.05);
+}
+
+.card-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-text {
+    font-size: 1.2em;
+    padding: 15px;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+
+.arrow p {
+    margin: 0;
+}
+
+.card-icon {
+    margin-right: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .card-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card-item {
+        max-width: 90%;
+    }
+}
+
+

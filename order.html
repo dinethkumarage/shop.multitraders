@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+
+    <!--Css file links-->
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./order.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<!--Header section starts here-->
+<header>
+    <section class="logo">
+        <a href="./index.html">
+            <img src="/images/logo.png" class="logoimage" alt="Logo">
+            <h1 id="heading">MultiTraders</span></h1>
+        </a>
+    </section>
+    <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./categories.html">Categories</a></li>
+        <li><a href="./register.html">Registration</a></li>
+    </ul>
+    <section class="search-bar">
+        <input type="text" placeholder="Search">
+        <img src="/images/search.svg" alt="Search Icon">
+    </section>
+    <section class="cart-user">
+        <a href="./order.html">
+            <img src="/images/cart.svg" alt="Cart Icon" class="cart-icon">
+        </a>
+        <a href="../html/user.html">
+            <img src="/images/user.svg" alt="User Icon" class="user-icon">
+        </a>
+    </section>
+</header>
+<!--Header Section ends here-->
+
+
+<body>
+
+<!--header of the section-->
+    <header>
+        <h1>Checkout</h1>
+    </header>
+
+    <main>
+        <section class="products-section">
+            <h2 id="heading">Products in Your Cart</h2>
+            <ul class="product-list">
+                <li class="product-item">
+                    <p>Product 1</p>
+                    <p>1300lkr</p>
+                </li>
+                <li class="product-item">
+                    <p>Product 2</p>
+                    <p>690lkr</p>
+                </li>
+            </ul>
+        </section>
+
+
+        <section class="payment-section">
+            <h2 id="heading">Delivery Information</h2>
+            <form>
+                <label for="card-name">Your Name:</label>
+                <input type="text" id="card-name" name="card-name" >
+
+                <label for="card-number">Address line 1:</label>
+                <input type="text" id="card-number" name="card-number">
+
+                <label for="expiry-date">Mobile Number:</label>
+                <input type="text" id="expiry-date" name="expiry-date" >
+            </form>
+        </section>
+
+        <section class="payment-section">
+            <h2 id="heading">Payment Details</h2>
+            <form>
+                <label for="card-name">Name on Card:</label>
+                <input type="text" id="card-name" name="card-name" >
+
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number">
+
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="text" id="expiry-date" name="expiry-date" >
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" >
+
+                <button type="submit">Pay Now</button>
+            </form>
+        </section>
+    </main>
+
+<!--Footer Section starts here-->
+
+<footer class="footer">
+    <section class="footer-container">
+        <section class="footer-column">
+            <h3>Contact Us</h3>
+            <p>Email: info@multitraders.com</p>
+            <p>Phone: 077 5652 877</p>
+            <p>Address: 61/A, Colombo</p>
+        </section>
+        <section class="footer-column">
+            <h3>Site Map</h3>
+            <ul id="sitemap">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./categories.html">categories</a></li>
+                <li><a href="./register.html">Register</a></li>
+            </ul>
+        </section>
+        <section class="footer-column">
+            <h3>Follow Us</h3>
+            <section class="social-icons">
+                <a href="#"><img src="/images/facebook.jpg" alt="Facebook"></a>
+                <a href="#"><img src="/images/instagram.png" alt="instagram"></a>
+                
+            </section>
+        </section>
+    </section>
+    <p class="footer-bottom-text">&copy;MultiTraders Supermarket 2024. All rights reserved.</p>
+</footer>
+
+<!--footer section ends here-->
+
+
+    
+</body>
+</html>

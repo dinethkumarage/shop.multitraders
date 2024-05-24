@@ -1,0 +1,131 @@
+:root {
+    --green: #26d266;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    --border: .2rem solid rgba(0, 0, 0, .1);
+    --outline: .1rem solid rgba(0, 0, 0, .1);
+    --outline-hover: .2rem solid var(--black);
+}
+
+/*Main style*/
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #130f40;
+    background-color: #f8f9fa;
+}
+
+h1.heading {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+h3.heading {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.greentext {
+    color: var(--green);
+}
+
+#section {
+    padding: 1rem;
+}
+
+.containers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+    background: #fff;
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+    width: 100%; /* Ensure containers fit within the screen */
+    box-sizing: border-box;
+}
+
+.containers img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.containers p {
+    font-size: 1rem;
+    color: var(--light-color);
+}
+
+.map {
+    width: 100%;
+    height: auto;
+    border: 0;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.services h2 {
+    text-align: center;
+    margin: 1rem 0;
+    color: var(--black);
+}
+
+.services table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.services th, .services td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.services th {
+    background: var(--green);
+    color: #fff;
+}
+
+.services tfoot td {
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--light-color);
+}
+
+/*responsive style*/
+
+@media screen and (max-width: 768px) {
+    h1.heading {
+        font-size: 1.5rem;
+    }
+
+    h3.heading {
+        font-size: 1.25rem;
+    }
+
+    .containers {
+        padding: 0.5rem;
+    }
+
+    .services table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .services th, .services td {
+        padding: 0.5rem;
+    }
+}
